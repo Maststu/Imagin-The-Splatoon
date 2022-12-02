@@ -5,7 +5,6 @@
 *{
 	margin: 0;
 	padding: 0;
-    color: white;
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	font-size: 16px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
@@ -34,10 +33,22 @@
 	font-family: 'M PLUS 1p', sans-serif;
 }
 
+.sidebar dt a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	color: white;
+	line-height: 40px;
+	font-size: 20px;
+	padding-left: 45px;
+	border-top: 2px solid white;
+}
+
 .sidebar dl dt {
 	display: block;
 	height: 100%;
 	width: 100%;
+	color: white;
 	line-height: 65px;
 	font-size: 20px;
 	padding-left: 30px;
@@ -47,12 +58,16 @@
 
 .sidebar dl ul{
 	display: block;
-	height: 100%;
+	height: 80%;
 	width: 100%;
-	line-height: 65px;
+	line-height: 40px;
 	font-size: 20px;
 	padding-left: 40px;
 	border-top: 1px solid white;
+}
+
+.sidebar dl ul a{
+	color: white;
 }
 
 dl ul li:hover a{
@@ -60,10 +75,6 @@ dl ul li:hover a{
 	transition: 0.4s;
 }
 
-dl dt:hover a{
-	padding-left: 45px;
-	transition: 0.4s;
-}
 
 
 /* toggle section */
@@ -73,7 +84,7 @@ dl dt:hover a{
 
 label #hambargerBtn,
 label #cancel {
-	position: absolute;
+	position: fixed;
 	cursor: pointer;
 	background: #053e67;
 	border-radius: 3px;
@@ -112,15 +123,46 @@ label #cancel{
 	left: 195px;
 }
 
+
+/*container*/
 #container{
-	
 	background: black;
+	color: white;
 }
 
 #container header{
 	text-align: center;
 }
 
+#container2{
+	background: aliceblue;
+}
+
+
+/*login*/
+.login-box{
+	box-sizing: border-box;
+	color: white;
+	background: rgb(157, 196, 138);
+	position: absolute;
+	top: 20px;
+	left: 260px;
+	padding: 0;
+	height: 600px;
+	width: 500px;
+	
+	font-size: 20px;
+	box-shadow: 0 2px 4px #4b4b4b;
+	padding: 40px;
+}
+.login-box h1{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-weight: 300;
+	font-size: 24px;
+	color: white;
+	text-align: center;
+}
 
 /*footer*/
 footer {
