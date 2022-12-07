@@ -1,6 +1,5 @@
 import json
 from pprint import pprint
-
 from flask import (Flask, current_app, g, redirect, render_template, request,
                    url_for)
 
