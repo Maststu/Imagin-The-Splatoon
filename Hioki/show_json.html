@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
         <script src="https://kit.fontawesome.com/a69c380e0a.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+<body>
 <!-- toggle section -->
 <input type="checkbox" id="check">
 <label for="check">
@@ -27,8 +27,8 @@
     <dl><dt>戦績分析ツール</dt>
         <ul>
             <li><a href="{{url_for('show_json')}}">対戦履歴</a></li>
-            <li><a href="#">勝率</a></li>
-            <li><a href="#">名前検索</a></li>
+            <li><a href="{{url_for('show_winrate')}}">勝率</a></li>
+            <li><a href="{{url_for('name_search')}}">名前検索</a></li>
             <li><a href="#">チーム別勝率</a></li>
             <li><a href="#">時間帯別勝率</a></li>
         </ul>
@@ -72,12 +72,13 @@
             {% if ("LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement']) %}
                 <p id="lose">Judgement:{{result['data']['vsHistoryDetail']['myTeam']['judgement']}}</p>
             {% endif %}
-        
-            <p>team member</p>
+
+            <div class="myteam">
+            <h3>Team Member</h3>
             {% for i in result['data']['vsHistoryDetail']['myTeam']['players'] %}
-                
-                <p>{{i['byname']}} {{i['name']}}:{{i['weapon']['name']}}</p>
-                <p>{{i['result']['kill']}}キル {{i['result']['death']}}デス {{i['result']['assist']}}アシスト</p>
+                <h4>{{i['byname']}}</h4> 
+                <p><span>{{i['name']}} <img src="{{i['weapon']['image']['url']}}" class="weapon"></span>
+                   {{i['result']['kill']}}キル {{i['result']['death']}}デス {{i['result']['assist']}}アシスト</p>
                 <script>
                     
                     function sum_result(){
@@ -94,13 +95,15 @@
                 </script>
             
             {% endfor %}
-            <p>Mode:{{result['data']['vsHistoryDetail']['vsMode']['mode']}} Rule:{{result['data']['vsHistoryDetail']['vsRule']['name']}} Stage:{{result['data']['vsHistoryDetail']['vsStage']['name']}}</p>
+            </div>
+            <div id="rule">
+            <h3>Mode:{{result['data']['vsHistoryDetail']['vsMode']['mode']}} Rule:{{result['data']['vsHistoryDetail']['vsRule']['name']}} Stage:{{result['data']['vsHistoryDetail']['vsStage']['name']}}</h3>
             
-            <p><img src="{{result['data']['vsHistoryDetail']['vsStage']['image']['url']}}"></p>
+            <h3><img src="{{result['data']['vsHistoryDetail']['vsStage']['image']['url']}}"></h3>
+            </div>
             
-            
+            <hr size="3">
         
-            <hr>
         {% endfor %}
 
         <script>
@@ -110,5 +113,5 @@
             print_sum();    
         </script>
     </div>
-    </body>
+</body>
 </html>
