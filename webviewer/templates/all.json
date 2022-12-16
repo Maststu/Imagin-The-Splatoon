@@ -1,0 +1,649 @@
+{
+    "data": {
+        "xBattleHistories": {
+            "historyGroups": {
+                "nodes": [
+                    {
+                        "historyDetails": {
+                            "nodes": [
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjE0VDA4MDI0NF8zODYwMjJiZS0zZmEyLTQ5YjItOGM2ZC0xY2YyYTQzNjM4ZmY=",
+                                    "judgement": "LOSE",
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 30
+                                        }
+                                    },
+                                    "nextHistoryDetail": null,
+                                    "player": {
+                                        "id": "VnNQbGF5ZXItdS1xa2dndmw1cGNlaXN2Y25pYW5tbTpYTUFUQ0g6MjAyMjEyMTRUMDgwMjQ0XzM4NjAyMmJlLTNmYTItNDliMi04YzZkLTFjZjJhNDM2MzhmZjp1LXFrZ2d2bDVwY2Vpc3Zjbmlhbm1t",
+                                        "weapon": {
+                                            "id": "V2VhcG9uLTIw",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/25e98eaba1e17308db191b740d9b89e6a977bfcd37c8dc1d65883731c0c72609_1.png?Expires=1673308800&Signature=kdlViZjhlLuVG9GHYQn6Ju6O7-vvi-JW1efXK6SL8yUBdD2qXpEPDXRW2DlZF2uprMok3e3xVGtFHoZC2bi4jXeC~aUxoDARmy4oPtr-KO9vGwYiIEbdU3Oe5QelNk0Qrq~ogM2Sl6IgjD-GtzbdGsI7dYXvXYLnd6qk~yCSSeYOKzdi-Sl~~EUOJHvsNInlfpquJEcjdQqJs8-jE2y1nc2MDGV2nSfA~CHgsD-jA7wySgE52xgQa6uGiDDuegoRocnMRsVdXvvs-XFrSh0e8UInVmLBp~w2hOriG9C9t4-feesxW7wt6jgR-yONtL5BxnDxQ3NIq0ZUQQVlk3OdbA__&Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "name": "\u30b7\u30e3\u30fc\u30d7\u30de\u30fc\u30ab\u30fc"
+                                        }
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjE0VDA3NTYxNl80OWU4OTlmNS1lNzExLTQ3ODUtOGExMy1lOTJhZDQ3MzdlNzM="
+                                    },
+                                    "vsMode": {
+                                        "id": "VnNNb2RlLTM=",
+                                        "mode": "X_MATCH"
+                                    },
+                                    "vsRule": {
+                                        "id": "VnNSdWxlLTQ=",
+                                        "name": "\u30ac\u30c1\u30a2\u30b5\u30ea"
+                                    },
+                                    "vsStage": {
+                                        "id": "VnNTdGFnZS0xMw==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/40aba8b36a9439e2d670fde5b3478819ea8a94f9e503b9d783248a5716786f35_3.png?Expires=1673308800&Signature=ezmlCTJqqXxYwFBxXAY6w66NaFEjTkKFO~JLR1jBXzMkSwkwaOKTOVOqrszIfGJ3EDGAdTVlwGb-ystpIWxmuuif3NbapRFpl9pFPNd~RY5xDrY7mYR1kGPq8QIlFBb1Yszp~btUw8WKmeZbSe8Lb-f6yTQ8im-ot4O6zm0PwruiCIy9uo-TVmpFhzyjEfXCC8p21kt6LVPhpFBEDKb7BZNK~~q4dWBrLoNqCuUbGVeWmvcZ4m68sr17syWtgGVImfzwoymbDc0h~AKoVDF6~GiB82RSCIvgQnlTZZldLFEVle8JT3QtUs~GPNebDP0uEe6vgLin1L5-AktvU6IC~Q__&Key-Pair-Id=KNBS2THMRC385"
+                                        },
+                                        "name": "\u6d77\u5973\u7f8e\u8853\u5927\u5b66"
+                                    }
+                                }
+                            ]
+                        },
+                        "xMatchMeasurement": {
+                            "isInitial": true,
+                            "loseCount": 1,
+                            "maxInitialBattleCount": 5,
+                            "maxLoseCount": 3,
+                            "maxWinCount": 3,
+                            "state": "INPROGRESS",
+                            "vsRule": {
+                                "id": "VnNSdWxlLTQ=",
+                                "name": "\u30ac\u30c1\u30a2\u30b5\u30ea",
+                                "rule": "CLAM"
+                            },
+                            "winCount": 0,
+                            "xPowerAfter": null
+                        }
+                    },
+                    {
+                        "historyDetails": {
+                            "nodes": [
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjE0VDA3NTYxNl80OWU4OTlmNS1lNzExLTQ3ODUtOGExMy1lOTJhZDQ3MzdlNzM=",
+                                    "judgement": "LOSE",
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 76
+                                        }
+                                    },
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjE0VDA4MDI0NF8zODYwMjJiZS0zZmEyLTQ5YjItOGM2ZC0xY2YyYTQzNjM4ZmY="
+                                    },
+                                    "player": {
+                                        "id": "VnNQbGF5ZXItdS1xa2dndmw1cGNlaXN2Y25pYW5tbTpYTUFUQ0g6MjAyMjEyMTRUMDc1NjE2XzQ5ZTg5OWY1LWU3MTEtNDc4NS04YTEzLWU5MmFkNDczN2U3Mzp1LXFrZ2d2bDVwY2Vpc3Zjbmlhbm1t",
+                                        "weapon": {
+                                            "id": "V2VhcG9uLTIw",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/25e98eaba1e17308db191b740d9b89e6a977bfcd37c8dc1d65883731c0c72609_1.png?Expires=1673308800&Signature=kdlViZjhlLuVG9GHYQn6Ju6O7-vvi-JW1efXK6SL8yUBdD2qXpEPDXRW2DlZF2uprMok3e3xVGtFHoZC2bi4jXeC~aUxoDARmy4oPtr-KO9vGwYiIEbdU3Oe5QelNk0Qrq~ogM2Sl6IgjD-GtzbdGsI7dYXvXYLnd6qk~yCSSeYOKzdi-Sl~~EUOJHvsNInlfpquJEcjdQqJs8-jE2y1nc2MDGV2nSfA~CHgsD-jA7wySgE52xgQa6uGiDDuegoRocnMRsVdXvvs-XFrSh0e8UInVmLBp~w2hOriG9C9t4-feesxW7wt6jgR-yONtL5BxnDxQ3NIq0ZUQQVlk3OdbA__&Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "name": "\u30b7\u30e3\u30fc\u30d7\u30de\u30fc\u30ab\u30fc"
+                                        }
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE3MTkxM182ODA3MWE2Mi04NTFiLTQ4NjMtOTM0Ny0wY2VkZTEwN2U4MTg="
+                                    },
+                                    "vsMode": {
+                                        "id": "VnNNb2RlLTM=",
+                                        "mode": "X_MATCH"
+                                    },
+                                    "vsRule": {
+                                        "id": "VnNSdWxlLTM=",
+                                        "name": "\u30ac\u30c1\u30db\u30b3\u30d0\u30c8\u30eb"
+                                    },
+                                    "vsStage": {
+                                        "id": "VnNTdGFnZS0z",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/8dc2f16d39c630bab40cead5b2485ca3559e829d0d3de0c2232c7a62fefb5fa9_3.png?Expires=1673308800&Signature=QA2wJVf~-aY2-hhhFhcKdQTax~hzQQ87mgUWjEiqmoXutZiI0GOPlGi8LJ~ZtN3bIE5XhsSoDyxIQbS2kOUb5Fjs27AkGt7-XotQ1hg2BDHmAW03M56QX1mhKND-1pLkhRyx2arBbc73afeQ3w0GmSayZIdmeGi11fYi2tsyaHokp~UhK~~9h5NZDBbC0xLseDUuTO8T1epgmahqy9Tna0C6iByfKmnkP16g0aEyAwsVXSiQB5RWxIJb4fz-Zk~uCvxCP7CgGyQrwYqOq7J-BGDaboePfGGSvRLZze0QCfKUaJ2viy6eXX3dPURcHqIeikm2Gdq-pdEv3oRI2wJGSw__&Key-Pair-Id=KNBS2THMRC385"
+                                        },
+                                        "name": "\u30e4\u30ac\u30e9\u5e02\u5834"
+                                    }
+                                }
+                            ]
+                        },
+                        "xMatchMeasurement": {
+                            "isInitial": true,
+                            "loseCount": 1,
+                            "maxInitialBattleCount": 5,
+                            "maxLoseCount": 3,
+                            "maxWinCount": 3,
+                            "state": "INPROGRESS",
+                            "vsRule": {
+                                "id": "VnNSdWxlLTM=",
+                                "name": "\u30ac\u30c1\u30db\u30b3\u30d0\u30c8\u30eb",
+                                "rule": "GOAL"
+                            },
+                            "winCount": 0,
+                            "xPowerAfter": null
+                        }
+                    },
+                    {
+                        "historyDetails": {
+                            "nodes": [
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE3MTkxM182ODA3MWE2Mi04NTFiLTQ4NjMtOTM0Ny0wY2VkZTEwN2U4MTg=",
+                                    "judgement": "LOSE",
+                                    "knockout": "LOSE",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 0
+                                        }
+                                    },
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjE0VDA3NTYxNl80OWU4OTlmNS1lNzExLTQ3ODUtOGExMy1lOTJhZDQ3MzdlNzM="
+                                    },
+                                    "player": {
+                                        "id": "VnNQbGF5ZXItdS1xa2dndmw1cGNlaXN2Y25pYW5tbTpYTUFUQ0g6MjAyMjEyMTNUMTcxOTEzXzY4MDcxYTYyLTg1MWItNDg2My05MzQ3LTBjZWRlMTA3ZTgxODp1LXFrZ2d2bDVwY2Vpc3Zjbmlhbm1t",
+                                        "weapon": {
+                                            "id": "V2VhcG9uLTIw",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/25e98eaba1e17308db191b740d9b89e6a977bfcd37c8dc1d65883731c0c72609_1.png?Expires=1673308800&Signature=kdlViZjhlLuVG9GHYQn6Ju6O7-vvi-JW1efXK6SL8yUBdD2qXpEPDXRW2DlZF2uprMok3e3xVGtFHoZC2bi4jXeC~aUxoDARmy4oPtr-KO9vGwYiIEbdU3Oe5QelNk0Qrq~ogM2Sl6IgjD-GtzbdGsI7dYXvXYLnd6qk~yCSSeYOKzdi-Sl~~EUOJHvsNInlfpquJEcjdQqJs8-jE2y1nc2MDGV2nSfA~CHgsD-jA7wySgE52xgQa6uGiDDuegoRocnMRsVdXvvs-XFrSh0e8UInVmLBp~w2hOriG9C9t4-feesxW7wt6jgR-yONtL5BxnDxQ3NIq0ZUQQVlk3OdbA__&Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "name": "\u30b7\u30e3\u30fc\u30d7\u30de\u30fc\u30ab\u30fc"
+                                        }
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE3MTcwOF80ZmY3M2VkOC04MWQ2LTQ4MWMtOGZjZC1lNTljMjE1N2ZjZmI="
+                                    },
+                                    "vsMode": {
+                                        "id": "VnNNb2RlLTM=",
+                                        "mode": "X_MATCH"
+                                    },
+                                    "vsRule": {
+                                        "id": "VnNSdWxlLTE=",
+                                        "name": "\u30ac\u30c1\u30a8\u30ea\u30a2"
+                                    },
+                                    "vsStage": {
+                                        "id": "VnNTdGFnZS0xNA==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/48684c69d5c5a4ffaf16b712a4895545a8d01196115d514fc878ce99863bb3e9_3.png?Expires=1673308800&Signature=cjRSd9x3FZUGS1dfNX-BTpt9mkSaymajpAKCmqqAK53XLaVMjUjEm-yh1wrEeaaUNlx~EhVlV7bsH7CNGvwsS8BnUCi9JYkjbMz6A4qu-shEf-LEGC5-6YaOVbucQl7iabB4UFfiuEFtv~EO~o6l-7-zUmWIWmCns-vlXy3byORkFblHGjWOAk-lFtsiJjrCN~uEgDTzoKVXZ3nn-y~67P7ALo5TPXEj5MyMPcLXGil9gPMtwYYxP7LH1U9KkacjeSeEZtrLFiRd~tvcw0HAZp0yYkC0yRP3Es-XnSFDcP0RGJPNuIRGufDGK6oseNVo788paMZn2asAaNEbx0y4tg__&Key-Pair-Id=KNBS2THMRC385"
+                                        },
+                                        "name": "\u30c1\u30e7\u30a6\u30b6\u30e1\u9020\u8239"
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE3MTcwOF80ZmY3M2VkOC04MWQ2LTQ4MWMtOGZjZC1lNTljMjE1N2ZjZmI=",
+                                    "judgement": "DRAW",
+                                    "knockout": null,
+                                    "myTeam": {
+                                        "result": null
+                                    },
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE3MTkxM182ODA3MWE2Mi04NTFiLTQ4NjMtOTM0Ny0wY2VkZTEwN2U4MTg="
+                                    },
+                                    "player": {
+                                        "id": "VnNQbGF5ZXItdS1xa2dndmw1cGNlaXN2Y25pYW5tbTpYTUFUQ0g6MjAyMjEyMTNUMTcxNzA4XzRmZjczZWQ4LTgxZDYtNDgxYy04ZmNkLWU1OWMyMTU3ZmNmYjp1LXFrZ2d2bDVwY2Vpc3Zjbmlhbm1t",
+                                        "weapon": {
+                                            "id": "V2VhcG9uLTIw",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/25e98eaba1e17308db191b740d9b89e6a977bfcd37c8dc1d65883731c0c72609_1.png?Expires=1673308800&Signature=kdlViZjhlLuVG9GHYQn6Ju6O7-vvi-JW1efXK6SL8yUBdD2qXpEPDXRW2DlZF2uprMok3e3xVGtFHoZC2bi4jXeC~aUxoDARmy4oPtr-KO9vGwYiIEbdU3Oe5QelNk0Qrq~ogM2Sl6IgjD-GtzbdGsI7dYXvXYLnd6qk~yCSSeYOKzdi-Sl~~EUOJHvsNInlfpquJEcjdQqJs8-jE2y1nc2MDGV2nSfA~CHgsD-jA7wySgE52xgQa6uGiDDuegoRocnMRsVdXvvs-XFrSh0e8UInVmLBp~w2hOriG9C9t4-feesxW7wt6jgR-yONtL5BxnDxQ3NIq0ZUQQVlk3OdbA__&Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "name": "\u30b7\u30e3\u30fc\u30d7\u30de\u30fc\u30ab\u30fc"
+                                        }
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE3MTQyNl9lNzU3N2YwMC01MWUwLTQ2OTktYmYwYy00MTA0YWZlYzVjYTU="
+                                    },
+                                    "vsMode": {
+                                        "id": "VnNNb2RlLTM=",
+                                        "mode": "X_MATCH"
+                                    },
+                                    "vsRule": {
+                                        "id": "VnNSdWxlLTE=",
+                                        "name": "\u30ac\u30c1\u30a8\u30ea\u30a2"
+                                    },
+                                    "vsStage": {
+                                        "id": "VnNTdGFnZS0y",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/898e1ae6c737a9d44552c7c81f9b710676492681525c514eadc68a6780aa52af_3.png?Expires=1673308800&Signature=GRHCR9VRn~5RFBmAzzFGke4ZIvPcHnNQF3LafCwQ4QWic-uwYfT5jPsRmPYqSUCSiv9mEZ~4BQQvzih2urrfcL1fKcQ9uq7wqwGxWZaqwpOshCvh-IeUDPggaPv2~3t788LQld61IIgtBW2hP7yZ4owYitUAwYHPTBe8Nh3M7W-BZiqcOHiUBEmCUgiRzYHOyzwqp8uwUGzPQtFcLEg-zPg90HnpO-9W1PFbPoGHSli5kSN5weehYcTA6HiyFybZb41r4o1Im9cFlUdeIK98lhTvyZE2cMouogJkdP6no5jCfZWopQOMfuDmNZcQ~AVVTNGYbi~jsVyNZpA07IsrTQ__&Key-Pair-Id=KNBS2THMRC385"
+                                        },
+                                        "name": "\u30b4\u30f3\u30ba\u30a4\u5730\u533a"
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE3MTQyNl9lNzU3N2YwMC01MWUwLTQ2OTktYmYwYy00MTA0YWZlYzVjYTU=",
+                                    "judgement": "LOSE",
+                                    "knockout": "LOSE",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 0
+                                        }
+                                    },
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE3MTcwOF80ZmY3M2VkOC04MWQ2LTQ4MWMtOGZjZC1lNTljMjE1N2ZjZmI="
+                                    },
+                                    "player": {
+                                        "id": "VnNQbGF5ZXItdS1xa2dndmw1cGNlaXN2Y25pYW5tbTpYTUFUQ0g6MjAyMjEyMTNUMTcxNDI2X2U3NTc3ZjAwLTUxZTAtNDY5OS1iZjBjLTQxMDRhZmVjNWNhNTp1LXFrZ2d2bDVwY2Vpc3Zjbmlhbm1t",
+                                        "weapon": {
+                                            "id": "V2VhcG9uLTIw",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/25e98eaba1e17308db191b740d9b89e6a977bfcd37c8dc1d65883731c0c72609_1.png?Expires=1673308800&Signature=kdlViZjhlLuVG9GHYQn6Ju6O7-vvi-JW1efXK6SL8yUBdD2qXpEPDXRW2DlZF2uprMok3e3xVGtFHoZC2bi4jXeC~aUxoDARmy4oPtr-KO9vGwYiIEbdU3Oe5QelNk0Qrq~ogM2Sl6IgjD-GtzbdGsI7dYXvXYLnd6qk~yCSSeYOKzdi-Sl~~EUOJHvsNInlfpquJEcjdQqJs8-jE2y1nc2MDGV2nSfA~CHgsD-jA7wySgE52xgQa6uGiDDuegoRocnMRsVdXvvs-XFrSh0e8UInVmLBp~w2hOriG9C9t4-feesxW7wt6jgR-yONtL5BxnDxQ3NIq0ZUQQVlk3OdbA__&Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "name": "\u30b7\u30e3\u30fc\u30d7\u30de\u30fc\u30ab\u30fc"
+                                        }
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE3MTEwNV84YzA1ZDBlNy1jYzc0LTQwYTItOWM1ZS1mNjNkNTA3MDM5YTU="
+                                    },
+                                    "vsMode": {
+                                        "id": "VnNNb2RlLTM=",
+                                        "mode": "X_MATCH"
+                                    },
+                                    "vsRule": {
+                                        "id": "VnNSdWxlLTE=",
+                                        "name": "\u30ac\u30c1\u30a8\u30ea\u30a2"
+                                    },
+                                    "vsStage": {
+                                        "id": "VnNTdGFnZS0y",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/898e1ae6c737a9d44552c7c81f9b710676492681525c514eadc68a6780aa52af_3.png?Expires=1673308800&Signature=GRHCR9VRn~5RFBmAzzFGke4ZIvPcHnNQF3LafCwQ4QWic-uwYfT5jPsRmPYqSUCSiv9mEZ~4BQQvzih2urrfcL1fKcQ9uq7wqwGxWZaqwpOshCvh-IeUDPggaPv2~3t788LQld61IIgtBW2hP7yZ4owYitUAwYHPTBe8Nh3M7W-BZiqcOHiUBEmCUgiRzYHOyzwqp8uwUGzPQtFcLEg-zPg90HnpO-9W1PFbPoGHSli5kSN5weehYcTA6HiyFybZb41r4o1Im9cFlUdeIK98lhTvyZE2cMouogJkdP6no5jCfZWopQOMfuDmNZcQ~AVVTNGYbi~jsVyNZpA07IsrTQ__&Key-Pair-Id=KNBS2THMRC385"
+                                        },
+                                        "name": "\u30b4\u30f3\u30ba\u30a4\u5730\u533a"
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE3MTEwNV84YzA1ZDBlNy1jYzc0LTQwYTItOWM1ZS1mNjNkNTA3MDM5YTU=",
+                                    "judgement": "LOSE",
+                                    "knockout": "LOSE",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 0
+                                        }
+                                    },
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE3MTQyNl9lNzU3N2YwMC01MWUwLTQ2OTktYmYwYy00MTA0YWZlYzVjYTU="
+                                    },
+                                    "player": {
+                                        "id": "VnNQbGF5ZXItdS1xa2dndmw1cGNlaXN2Y25pYW5tbTpYTUFUQ0g6MjAyMjEyMTNUMTcxMTA1XzhjMDVkMGU3LWNjNzQtNDBhMi05YzVlLWY2M2Q1MDcwMzlhNTp1LXFrZ2d2bDVwY2Vpc3Zjbmlhbm1t",
+                                        "weapon": {
+                                            "id": "V2VhcG9uLTIw",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/25e98eaba1e17308db191b740d9b89e6a977bfcd37c8dc1d65883731c0c72609_1.png?Expires=1673308800&Signature=kdlViZjhlLuVG9GHYQn6Ju6O7-vvi-JW1efXK6SL8yUBdD2qXpEPDXRW2DlZF2uprMok3e3xVGtFHoZC2bi4jXeC~aUxoDARmy4oPtr-KO9vGwYiIEbdU3Oe5QelNk0Qrq~ogM2Sl6IgjD-GtzbdGsI7dYXvXYLnd6qk~yCSSeYOKzdi-Sl~~EUOJHvsNInlfpquJEcjdQqJs8-jE2y1nc2MDGV2nSfA~CHgsD-jA7wySgE52xgQa6uGiDDuegoRocnMRsVdXvvs-XFrSh0e8UInVmLBp~w2hOriG9C9t4-feesxW7wt6jgR-yONtL5BxnDxQ3NIq0ZUQQVlk3OdbA__&Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "name": "\u30b7\u30e3\u30fc\u30d7\u30de\u30fc\u30ab\u30fc"
+                                        }
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE3MDYwNV81YWQ4MzRhMy0wYTkwLTQ5OGItYmJjNi05NmMwM2UwMGM0YTI="
+                                    },
+                                    "vsMode": {
+                                        "id": "VnNNb2RlLTM=",
+                                        "mode": "X_MATCH"
+                                    },
+                                    "vsRule": {
+                                        "id": "VnNSdWxlLTE=",
+                                        "name": "\u30ac\u30c1\u30a8\u30ea\u30a2"
+                                    },
+                                    "vsStage": {
+                                        "id": "VnNTdGFnZS0xNA==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/48684c69d5c5a4ffaf16b712a4895545a8d01196115d514fc878ce99863bb3e9_3.png?Expires=1673308800&Signature=cjRSd9x3FZUGS1dfNX-BTpt9mkSaymajpAKCmqqAK53XLaVMjUjEm-yh1wrEeaaUNlx~EhVlV7bsH7CNGvwsS8BnUCi9JYkjbMz6A4qu-shEf-LEGC5-6YaOVbucQl7iabB4UFfiuEFtv~EO~o6l-7-zUmWIWmCns-vlXy3byORkFblHGjWOAk-lFtsiJjrCN~uEgDTzoKVXZ3nn-y~67P7ALo5TPXEj5MyMPcLXGil9gPMtwYYxP7LH1U9KkacjeSeEZtrLFiRd~tvcw0HAZp0yYkC0yRP3Es-XnSFDcP0RGJPNuIRGufDGK6oseNVo788paMZn2asAaNEbx0y4tg__&Key-Pair-Id=KNBS2THMRC385"
+                                        },
+                                        "name": "\u30c1\u30e7\u30a6\u30b6\u30e1\u9020\u8239"
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE3MDYwNV81YWQ4MzRhMy0wYTkwLTQ5OGItYmJjNi05NmMwM2UwMGM0YTI=",
+                                    "judgement": "WIN",
+                                    "knockout": "WIN",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 100
+                                        }
+                                    },
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE3MTEwNV84YzA1ZDBlNy1jYzc0LTQwYTItOWM1ZS1mNjNkNTA3MDM5YTU="
+                                    },
+                                    "player": {
+                                        "id": "VnNQbGF5ZXItdS1xa2dndmw1cGNlaXN2Y25pYW5tbTpYTUFUQ0g6MjAyMjEyMTNUMTcwNjA1XzVhZDgzNGEzLTBhOTAtNDk4Yi1iYmM2LTk2YzAzZTAwYzRhMjp1LXFrZ2d2bDVwY2Vpc3Zjbmlhbm1t",
+                                        "weapon": {
+                                            "id": "V2VhcG9uLTIw",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/25e98eaba1e17308db191b740d9b89e6a977bfcd37c8dc1d65883731c0c72609_1.png?Expires=1673308800&Signature=kdlViZjhlLuVG9GHYQn6Ju6O7-vvi-JW1efXK6SL8yUBdD2qXpEPDXRW2DlZF2uprMok3e3xVGtFHoZC2bi4jXeC~aUxoDARmy4oPtr-KO9vGwYiIEbdU3Oe5QelNk0Qrq~ogM2Sl6IgjD-GtzbdGsI7dYXvXYLnd6qk~yCSSeYOKzdi-Sl~~EUOJHvsNInlfpquJEcjdQqJs8-jE2y1nc2MDGV2nSfA~CHgsD-jA7wySgE52xgQa6uGiDDuegoRocnMRsVdXvvs-XFrSh0e8UInVmLBp~w2hOriG9C9t4-feesxW7wt6jgR-yONtL5BxnDxQ3NIq0ZUQQVlk3OdbA__&Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "name": "\u30b7\u30e3\u30fc\u30d7\u30de\u30fc\u30ab\u30fc"
+                                        }
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE2NTkzMF9jNGU4MjU2OS0zNDc3LTQ2OTEtYjA0Ny02ZTkwNDg1M2QxOGM="
+                                    },
+                                    "vsMode": {
+                                        "id": "VnNNb2RlLTM=",
+                                        "mode": "X_MATCH"
+                                    },
+                                    "vsRule": {
+                                        "id": "VnNSdWxlLTE=",
+                                        "name": "\u30ac\u30c1\u30a8\u30ea\u30a2"
+                                    },
+                                    "vsStage": {
+                                        "id": "VnNTdGFnZS0xNA==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/48684c69d5c5a4ffaf16b712a4895545a8d01196115d514fc878ce99863bb3e9_3.png?Expires=1673308800&Signature=cjRSd9x3FZUGS1dfNX-BTpt9mkSaymajpAKCmqqAK53XLaVMjUjEm-yh1wrEeaaUNlx~EhVlV7bsH7CNGvwsS8BnUCi9JYkjbMz6A4qu-shEf-LEGC5-6YaOVbucQl7iabB4UFfiuEFtv~EO~o6l-7-zUmWIWmCns-vlXy3byORkFblHGjWOAk-lFtsiJjrCN~uEgDTzoKVXZ3nn-y~67P7ALo5TPXEj5MyMPcLXGil9gPMtwYYxP7LH1U9KkacjeSeEZtrLFiRd~tvcw0HAZp0yYkC0yRP3Es-XnSFDcP0RGJPNuIRGufDGK6oseNVo788paMZn2asAaNEbx0y4tg__&Key-Pair-Id=KNBS2THMRC385"
+                                        },
+                                        "name": "\u30c1\u30e7\u30a6\u30b6\u30e1\u9020\u8239"
+                                    }
+                                }
+                            ]
+                        },
+                        "xMatchMeasurement": {
+                            "isInitial": false,
+                            "loseCount": 3,
+                            "maxInitialBattleCount": 5,
+                            "maxLoseCount": 3,
+                            "maxWinCount": 3,
+                            "state": "COMPLETED",
+                            "vsRule": {
+                                "id": "VnNSdWxlLTE=",
+                                "name": "\u30ac\u30c1\u30a8\u30ea\u30a2",
+                                "rule": "AREA"
+                            },
+                            "winCount": 1,
+                            "xPowerAfter": 2330.0692505219013
+                        }
+                    },
+                    {
+                        "historyDetails": {
+                            "nodes": [
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE2NTkzMF9jNGU4MjU2OS0zNDc3LTQ2OTEtYjA0Ny02ZTkwNDg1M2QxOGM=",
+                                    "judgement": "WIN",
+                                    "knockout": "NEITHER",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 90
+                                        }
+                                    },
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE3MDYwNV81YWQ4MzRhMy0wYTkwLTQ5OGItYmJjNi05NmMwM2UwMGM0YTI="
+                                    },
+                                    "player": {
+                                        "id": "VnNQbGF5ZXItdS1xa2dndmw1cGNlaXN2Y25pYW5tbTpYTUFUQ0g6MjAyMjEyMTNUMTY1OTMwX2M0ZTgyNTY5LTM0NzctNDY5MS1iMDQ3LTZlOTA0ODUzZDE4Yzp1LXFrZ2d2bDVwY2Vpc3Zjbmlhbm1t",
+                                        "weapon": {
+                                            "id": "V2VhcG9uLTIw",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/25e98eaba1e17308db191b740d9b89e6a977bfcd37c8dc1d65883731c0c72609_1.png?Expires=1673308800&Signature=kdlViZjhlLuVG9GHYQn6Ju6O7-vvi-JW1efXK6SL8yUBdD2qXpEPDXRW2DlZF2uprMok3e3xVGtFHoZC2bi4jXeC~aUxoDARmy4oPtr-KO9vGwYiIEbdU3Oe5QelNk0Qrq~ogM2Sl6IgjD-GtzbdGsI7dYXvXYLnd6qk~yCSSeYOKzdi-Sl~~EUOJHvsNInlfpquJEcjdQqJs8-jE2y1nc2MDGV2nSfA~CHgsD-jA7wySgE52xgQa6uGiDDuegoRocnMRsVdXvvs-XFrSh0e8UInVmLBp~w2hOriG9C9t4-feesxW7wt6jgR-yONtL5BxnDxQ3NIq0ZUQQVlk3OdbA__&Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "name": "\u30b7\u30e3\u30fc\u30d7\u30de\u30fc\u30ab\u30fc"
+                                        }
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE2NTYyNV8wNjA2MDU5OS04Y2Q2LTRhMGQtODQ2ZS0wOWU3OTNhNmFmNTA="
+                                    },
+                                    "vsMode": {
+                                        "id": "VnNNb2RlLTM=",
+                                        "mode": "X_MATCH"
+                                    },
+                                    "vsRule": {
+                                        "id": "VnNSdWxlLTE=",
+                                        "name": "\u30ac\u30c1\u30a8\u30ea\u30a2"
+                                    },
+                                    "vsStage": {
+                                        "id": "VnNTdGFnZS0xNA==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/48684c69d5c5a4ffaf16b712a4895545a8d01196115d514fc878ce99863bb3e9_3.png?Expires=1673308800&Signature=cjRSd9x3FZUGS1dfNX-BTpt9mkSaymajpAKCmqqAK53XLaVMjUjEm-yh1wrEeaaUNlx~EhVlV7bsH7CNGvwsS8BnUCi9JYkjbMz6A4qu-shEf-LEGC5-6YaOVbucQl7iabB4UFfiuEFtv~EO~o6l-7-zUmWIWmCns-vlXy3byORkFblHGjWOAk-lFtsiJjrCN~uEgDTzoKVXZ3nn-y~67P7ALo5TPXEj5MyMPcLXGil9gPMtwYYxP7LH1U9KkacjeSeEZtrLFiRd~tvcw0HAZp0yYkC0yRP3Es-XnSFDcP0RGJPNuIRGufDGK6oseNVo788paMZn2asAaNEbx0y4tg__&Key-Pair-Id=KNBS2THMRC385"
+                                        },
+                                        "name": "\u30c1\u30e7\u30a6\u30b6\u30e1\u9020\u8239"
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE2NTYyNV8wNjA2MDU5OS04Y2Q2LTRhMGQtODQ2ZS0wOWU3OTNhNmFmNTA=",
+                                    "judgement": "WIN",
+                                    "knockout": "WIN",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 100
+                                        }
+                                    },
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE2NTkzMF9jNGU4MjU2OS0zNDc3LTQ2OTEtYjA0Ny02ZTkwNDg1M2QxOGM="
+                                    },
+                                    "player": {
+                                        "id": "VnNQbGF5ZXItdS1xa2dndmw1cGNlaXN2Y25pYW5tbTpYTUFUQ0g6MjAyMjEyMTNUMTY1NjI1XzA2MDYwNTk5LThjZDYtNGEwZC04NDZlLTA5ZTc5M2E2YWY1MDp1LXFrZ2d2bDVwY2Vpc3Zjbmlhbm1t",
+                                        "weapon": {
+                                            "id": "V2VhcG9uLTIw",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/25e98eaba1e17308db191b740d9b89e6a977bfcd37c8dc1d65883731c0c72609_1.png?Expires=1673308800&Signature=kdlViZjhlLuVG9GHYQn6Ju6O7-vvi-JW1efXK6SL8yUBdD2qXpEPDXRW2DlZF2uprMok3e3xVGtFHoZC2bi4jXeC~aUxoDARmy4oPtr-KO9vGwYiIEbdU3Oe5QelNk0Qrq~ogM2Sl6IgjD-GtzbdGsI7dYXvXYLnd6qk~yCSSeYOKzdi-Sl~~EUOJHvsNInlfpquJEcjdQqJs8-jE2y1nc2MDGV2nSfA~CHgsD-jA7wySgE52xgQa6uGiDDuegoRocnMRsVdXvvs-XFrSh0e8UInVmLBp~w2hOriG9C9t4-feesxW7wt6jgR-yONtL5BxnDxQ3NIq0ZUQQVlk3OdbA__&Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "name": "\u30b7\u30e3\u30fc\u30d7\u30de\u30fc\u30ab\u30fc"
+                                        }
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE2NTMxOV9iZjJjMTUyYS1lZjUwLTRhMDEtOGUxNy03OWU5ZDFhZmE3Njk="
+                                    },
+                                    "vsMode": {
+                                        "id": "VnNNb2RlLTM=",
+                                        "mode": "X_MATCH"
+                                    },
+                                    "vsRule": {
+                                        "id": "VnNSdWxlLTE=",
+                                        "name": "\u30ac\u30c1\u30a8\u30ea\u30a2"
+                                    },
+                                    "vsStage": {
+                                        "id": "VnNTdGFnZS0y",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/898e1ae6c737a9d44552c7c81f9b710676492681525c514eadc68a6780aa52af_3.png?Expires=1673308800&Signature=GRHCR9VRn~5RFBmAzzFGke4ZIvPcHnNQF3LafCwQ4QWic-uwYfT5jPsRmPYqSUCSiv9mEZ~4BQQvzih2urrfcL1fKcQ9uq7wqwGxWZaqwpOshCvh-IeUDPggaPv2~3t788LQld61IIgtBW2hP7yZ4owYitUAwYHPTBe8Nh3M7W-BZiqcOHiUBEmCUgiRzYHOyzwqp8uwUGzPQtFcLEg-zPg90HnpO-9W1PFbPoGHSli5kSN5weehYcTA6HiyFybZb41r4o1Im9cFlUdeIK98lhTvyZE2cMouogJkdP6no5jCfZWopQOMfuDmNZcQ~AVVTNGYbi~jsVyNZpA07IsrTQ__&Key-Pair-Id=KNBS2THMRC385"
+                                        },
+                                        "name": "\u30b4\u30f3\u30ba\u30a4\u5730\u533a"
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE2NTMxOV9iZjJjMTUyYS1lZjUwLTRhMDEtOGUxNy03OWU5ZDFhZmE3Njk=",
+                                    "judgement": "LOSE",
+                                    "knockout": "LOSE",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 0
+                                        }
+                                    },
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE2NTYyNV8wNjA2MDU5OS04Y2Q2LTRhMGQtODQ2ZS0wOWU3OTNhNmFmNTA="
+                                    },
+                                    "player": {
+                                        "id": "VnNQbGF5ZXItdS1xa2dndmw1cGNlaXN2Y25pYW5tbTpYTUFUQ0g6MjAyMjEyMTNUMTY1MzE5X2JmMmMxNTJhLWVmNTAtNGEwMS04ZTE3LTc5ZTlkMWFmYTc2OTp1LXFrZ2d2bDVwY2Vpc3Zjbmlhbm1t",
+                                        "weapon": {
+                                            "id": "V2VhcG9uLTIw",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/25e98eaba1e17308db191b740d9b89e6a977bfcd37c8dc1d65883731c0c72609_1.png?Expires=1673308800&Signature=kdlViZjhlLuVG9GHYQn6Ju6O7-vvi-JW1efXK6SL8yUBdD2qXpEPDXRW2DlZF2uprMok3e3xVGtFHoZC2bi4jXeC~aUxoDARmy4oPtr-KO9vGwYiIEbdU3Oe5QelNk0Qrq~ogM2Sl6IgjD-GtzbdGsI7dYXvXYLnd6qk~yCSSeYOKzdi-Sl~~EUOJHvsNInlfpquJEcjdQqJs8-jE2y1nc2MDGV2nSfA~CHgsD-jA7wySgE52xgQa6uGiDDuegoRocnMRsVdXvvs-XFrSh0e8UInVmLBp~w2hOriG9C9t4-feesxW7wt6jgR-yONtL5BxnDxQ3NIq0ZUQQVlk3OdbA__&Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "name": "\u30b7\u30e3\u30fc\u30d7\u30de\u30fc\u30ab\u30fc"
+                                        }
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE2NDg0MF8xYTYyNDk3Zi0xY2JjLTQzMjQtOWZiZi1hY2JiYmIzMDc4NzE="
+                                    },
+                                    "vsMode": {
+                                        "id": "VnNNb2RlLTM=",
+                                        "mode": "X_MATCH"
+                                    },
+                                    "vsRule": {
+                                        "id": "VnNSdWxlLTE=",
+                                        "name": "\u30ac\u30c1\u30a8\u30ea\u30a2"
+                                    },
+                                    "vsStage": {
+                                        "id": "VnNTdGFnZS0y",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/898e1ae6c737a9d44552c7c81f9b710676492681525c514eadc68a6780aa52af_3.png?Expires=1673308800&Signature=GRHCR9VRn~5RFBmAzzFGke4ZIvPcHnNQF3LafCwQ4QWic-uwYfT5jPsRmPYqSUCSiv9mEZ~4BQQvzih2urrfcL1fKcQ9uq7wqwGxWZaqwpOshCvh-IeUDPggaPv2~3t788LQld61IIgtBW2hP7yZ4owYitUAwYHPTBe8Nh3M7W-BZiqcOHiUBEmCUgiRzYHOyzwqp8uwUGzPQtFcLEg-zPg90HnpO-9W1PFbPoGHSli5kSN5weehYcTA6HiyFybZb41r4o1Im9cFlUdeIK98lhTvyZE2cMouogJkdP6no5jCfZWopQOMfuDmNZcQ~AVVTNGYbi~jsVyNZpA07IsrTQ__&Key-Pair-Id=KNBS2THMRC385"
+                                        },
+                                        "name": "\u30b4\u30f3\u30ba\u30a4\u5730\u533a"
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE2NDg0MF8xYTYyNDk3Zi0xY2JjLTQzMjQtOWZiZi1hY2JiYmIzMDc4NzE=",
+                                    "judgement": "LOSE",
+                                    "knockout": "LOSE",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 0
+                                        }
+                                    },
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE2NTMxOV9iZjJjMTUyYS1lZjUwLTRhMDEtOGUxNy03OWU5ZDFhZmE3Njk="
+                                    },
+                                    "player": {
+                                        "id": "VnNQbGF5ZXItdS1xa2dndmw1cGNlaXN2Y25pYW5tbTpYTUFUQ0g6MjAyMjEyMTNUMTY0ODQwXzFhNjI0OTdmLTFjYmMtNDMyNC05ZmJmLWFjYmJiYjMwNzg3MTp1LXFrZ2d2bDVwY2Vpc3Zjbmlhbm1t",
+                                        "weapon": {
+                                            "id": "V2VhcG9uLTIw",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/25e98eaba1e17308db191b740d9b89e6a977bfcd37c8dc1d65883731c0c72609_1.png?Expires=1673308800&Signature=kdlViZjhlLuVG9GHYQn6Ju6O7-vvi-JW1efXK6SL8yUBdD2qXpEPDXRW2DlZF2uprMok3e3xVGtFHoZC2bi4jXeC~aUxoDARmy4oPtr-KO9vGwYiIEbdU3Oe5QelNk0Qrq~ogM2Sl6IgjD-GtzbdGsI7dYXvXYLnd6qk~yCSSeYOKzdi-Sl~~EUOJHvsNInlfpquJEcjdQqJs8-jE2y1nc2MDGV2nSfA~CHgsD-jA7wySgE52xgQa6uGiDDuegoRocnMRsVdXvvs-XFrSh0e8UInVmLBp~w2hOriG9C9t4-feesxW7wt6jgR-yONtL5BxnDxQ3NIq0ZUQQVlk3OdbA__&Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "name": "\u30b7\u30e3\u30fc\u30d7\u30de\u30fc\u30ab\u30fc"
+                                        }
+                                    },
+                                    "previousHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE2NDUyNF8yYWViMmY0Ny1hMWUwLTQ1MzEtODZlOS02NjMxNGY0ZWI4MWU="
+                                    },
+                                    "vsMode": {
+                                        "id": "VnNNb2RlLTM=",
+                                        "mode": "X_MATCH"
+                                    },
+                                    "vsRule": {
+                                        "id": "VnNSdWxlLTE=",
+                                        "name": "\u30ac\u30c1\u30a8\u30ea\u30a2"
+                                    },
+                                    "vsStage": {
+                                        "id": "VnNTdGFnZS0xNA==",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/48684c69d5c5a4ffaf16b712a4895545a8d01196115d514fc878ce99863bb3e9_3.png?Expires=1673308800&Signature=cjRSd9x3FZUGS1dfNX-BTpt9mkSaymajpAKCmqqAK53XLaVMjUjEm-yh1wrEeaaUNlx~EhVlV7bsH7CNGvwsS8BnUCi9JYkjbMz6A4qu-shEf-LEGC5-6YaOVbucQl7iabB4UFfiuEFtv~EO~o6l-7-zUmWIWmCns-vlXy3byORkFblHGjWOAk-lFtsiJjrCN~uEgDTzoKVXZ3nn-y~67P7ALo5TPXEj5MyMPcLXGil9gPMtwYYxP7LH1U9KkacjeSeEZtrLFiRd~tvcw0HAZp0yYkC0yRP3Es-XnSFDcP0RGJPNuIRGufDGK6oseNVo788paMZn2asAaNEbx0y4tg__&Key-Pair-Id=KNBS2THMRC385"
+                                        },
+                                        "name": "\u30c1\u30e7\u30a6\u30b6\u30e1\u9020\u8239"
+                                    }
+                                },
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE2NDUyNF8yYWViMmY0Ny1hMWUwLTQ1MzEtODZlOS02NjMxNGY0ZWI4MWU=",
+                                    "judgement": "WIN",
+                                    "knockout": "WIN",
+                                    "myTeam": {
+                                        "result": {
+                                            "paintPoint": null,
+                                            "paintRatio": null,
+                                            "score": 100
+                                        }
+                                    },
+                                    "nextHistoryDetail": {
+                                        "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjEzVDE2NDg0MF8xYTYyNDk3Zi0xY2JjLTQzMjQtOWZiZi1hY2JiYmIzMDc4NzE="
+                                    },
+                                    "player": {
+                                        "id": "VnNQbGF5ZXItdS1xa2dndmw1cGNlaXN2Y25pYW5tbTpYTUFUQ0g6MjAyMjEyMTNUMTY0NTI0XzJhZWIyZjQ3LWExZTAtNDUzMS04NmU5LTY2MzE0ZjRlYjgxZTp1LXFrZ2d2bDVwY2Vpc3Zjbmlhbm1t",
+                                        "weapon": {
+                                            "id": "V2VhcG9uLTIw",
+                                            "image": {
+                                                "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/weapon_illust/25e98eaba1e17308db191b740d9b89e6a977bfcd37c8dc1d65883731c0c72609_1.png?Expires=1673308800&Signature=kdlViZjhlLuVG9GHYQn6Ju6O7-vvi-JW1efXK6SL8yUBdD2qXpEPDXRW2DlZF2uprMok3e3xVGtFHoZC2bi4jXeC~aUxoDARmy4oPtr-KO9vGwYiIEbdU3Oe5QelNk0Qrq~ogM2Sl6IgjD-GtzbdGsI7dYXvXYLnd6qk~yCSSeYOKzdi-Sl~~EUOJHvsNInlfpquJEcjdQqJs8-jE2y1nc2MDGV2nSfA~CHgsD-jA7wySgE52xgQa6uGiDDuegoRocnMRsVdXvvs-XFrSh0e8UInVmLBp~w2hOriG9C9t4-feesxW7wt6jgR-yONtL5BxnDxQ3NIq0ZUQQVlk3OdbA__&Key-Pair-Id=KNBS2THMRC385"
+                                            },
+                                            "name": "\u30b7\u30e3\u30fc\u30d7\u30de\u30fc\u30ab\u30fc"
+                                        }
+                                    },
+                                    "previousHistoryDetail": null,
+                                    "vsMode": {
+                                        "id": "VnNNb2RlLTM=",
+                                        "mode": "X_MATCH"
+                                    },
+                                    "vsRule": {
+                                        "id": "VnNSdWxlLTE=",
+                                        "name": "\u30ac\u30c1\u30a8\u30ea\u30a2"
+                                    },
+                                    "vsStage": {
+                                        "id": "VnNTdGFnZS0y",
+                                        "image": {
+                                            "url": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/stage_img/banner/low_resolution/898e1ae6c737a9d44552c7c81f9b710676492681525c514eadc68a6780aa52af_3.png?Expires=1673308800&Signature=GRHCR9VRn~5RFBmAzzFGke4ZIvPcHnNQF3LafCwQ4QWic-uwYfT5jPsRmPYqSUCSiv9mEZ~4BQQvzih2urrfcL1fKcQ9uq7wqwGxWZaqwpOshCvh-IeUDPggaPv2~3t788LQld61IIgtBW2hP7yZ4owYitUAwYHPTBe8Nh3M7W-BZiqcOHiUBEmCUgiRzYHOyzwqp8uwUGzPQtFcLEg-zPg90HnpO-9W1PFbPoGHSli5kSN5weehYcTA6HiyFybZb41r4o1Im9cFlUdeIK98lhTvyZE2cMouogJkdP6no5jCfZWopQOMfuDmNZcQ~AVVTNGYbi~jsVyNZpA07IsrTQ__&Key-Pair-Id=KNBS2THMRC385"
+                                        },
+                                        "name": "\u30b4\u30f3\u30ba\u30a4\u5730\u533a"
+                                    }
+                                }
+                            ]
+                        },
+                        "xMatchMeasurement": {
+                            "isInitial": true,
+                            "loseCount": 2,
+                            "maxInitialBattleCount": 5,
+                            "maxLoseCount": 3,
+                            "maxWinCount": 3,
+                            "state": "COMPLETED",
+                            "vsRule": {
+                                "id": "VnNSdWxlLTE=",
+                                "name": "\u30ac\u30c1\u30a8\u30ea\u30a2",
+                                "rule": "AREA"
+                            },
+                            "winCount": 3,
+                            "xPowerAfter": 2395.159197894735
+                        }
+                    }
+                ]
+            },
+            "historyGroupsOnlyFirst": {
+                "nodes": [
+                    {
+                        "historyDetails": {
+                            "nodes": [
+                                {
+                                    "id": "VnNIaXN0b3J5RGV0YWlsLXUtcWtnZ3ZsNXBjZWlzdmNuaWFubW06WE1BVENIOjIwMjIxMjE0VDA4MDI0NF8zODYwMjJiZS0zZmEyLTQ5YjItOGM2ZC0xY2YyYTQzNjM4ZmY=",
+                                    "player": {
+                                        "id": "VnNQbGF5ZXItdS1xa2dndmw1cGNlaXN2Y25pYW5tbTpYTUFUQ0g6MjAyMjEyMTRUMDgwMjQ0XzM4NjAyMmJlLTNmYTItNDliMi04YzZkLTFjZjJhNDM2MzhmZjp1LXFrZ2d2bDVwY2Vpc3Zjbmlhbm1t",
+                                        "weapon": {
+                                            "id": "V2VhcG9uLTIw",
+                                            "specialWeapon": {
+                                                "id": "U3BlY2lhbFdlYXBvbi0xMg==",
+                                                "maskingImage": {
+                                                    "height": 100,
+                                                    "maskImageUrl": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/special_img/mask/680379f8b83e5f9e033b828360827bc2f0e08c34df1abcc23de3d059fe2ac435_4.png?Expires=1673308800&Signature=PInl-yJ-54qhtF5mO33GN~R6dS3SeE7GHDJwDsgFjhg7-LJLtoyOiKceskS3D2NCsuhVUlOiUKcaoRktZP0SubMO53HqP6MQ98Y~Ty-Gp0Ai2d~R1d0t5LC1FReDKFE6XFXeZXCjp8WSnd9CAkmtV9KidRZByicVQJWrCujfTZnCmFHRO5QbwYxBi3rIUZ9e3y4q2gP5ZKsY4muoRo4mNkhiFvzG8CFb0ksPtBkings3yt~2YSCFLgl08EsnNGLPzz-JMyii7sXV8J78l-wNbYsdmZ3tDdbSeUt~zIwiLeUbb8O7MpBUj7uCXdwu13~SEGPw3rij4gD~iDISzFT9WQ__&Key-Pair-Id=KNBS2THMRC385",
+                                                    "overlayImageUrl": "https://api.lp1.av5ja.srv.nintendo.net/resources/prod/special_img/overlay/680379f8b83e5f9e033b828360827bc2f0e08c34df1abcc23de3d059fe2ac435_5.png?Expires=1673308800&Signature=e~84E~4UgjKCpIYmdRUOKkLwSvMMRx-AqiNrKLqNMxvYaUE7-AsbtOBg-C9veT2x6vYqJGJa~qKqEYqTqYOkUldwGhSxiH5bVd8Y5HCpwpunQuVxIsdKU5ET63igS2ppb1~49Hmg9SjoEc9wcq7XSteprzmRttbivNO2vKp6VIRGzS-S3u2sUB7dw5sTZax-muG9mb4j5V7bcf1ffxDCDBc7BMLGgyE7az8PQamdcIbuOHE7s9QzfdjNuXjY2AoWFbh58WaGVKUfWFMQiYrgfQhQU0lQ413OkKUEWTyyH8eUA3DplI1vQQArxdlgdOQhF4ofP-kAcKAxCYvoBKm0rw__&Key-Pair-Id=KNBS2THMRC385",
+                                                    "width": 100
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "summary": {
+                "assistAverage": 2.779132130667967,
+                "deathAverage": 6.728425158459288,
+                "killAverage": 7.020965382740126,
+                "lose": 7,
+                "perUnitTimeMinute": 5,
+                "specialAverage": 4.388103364212579,
+                "win": 4,
+                "xPowerAr": {
+                    "lastXPower": 2330.0692505219013
+                },
+                "xPowerCl": {
+                    "lastXPower": null
+                },
+                "xPowerGl": {
+                    "lastXPower": null
+                },
+                "xPowerLf": null
+            }
+        }
+    }
+}
