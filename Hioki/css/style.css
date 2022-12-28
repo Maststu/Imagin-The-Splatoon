@@ -237,8 +237,32 @@ img.weapon{
 	padding-left: 100px;
 }
 
-
 /*end show_json*/
+/*show_winrate*/
+#winrate{
+	background: antiquewhite;
+	padding-left: 100px;
+}
+
+#winrate h2{
+	font-size: 24px;
+	padding-left: 120px;
+}
+
+#winrate h3{
+	font-size: 20px;
+}
+
+#winrate h4{
+	padding-left: 30px;
+}
+
+#winrate p{
+	padding-left: 50px;
+}
+
+
+
 
 /*footer*/
 footer {
