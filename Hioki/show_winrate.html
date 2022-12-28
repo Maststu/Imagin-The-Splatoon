@@ -36,7 +36,7 @@
 </div>
 <!-- /sidebar section -->
 <!--モード入力-->
-<form>
+<form action="{{url_for('show_winrate')}}" method="POST">
     <select name="weapon-genre" id="weapon-genre">
         <option disabled selected>武器種を選んでください</option>
         <option value="all">ALL</option>
@@ -52,8 +52,9 @@
         <option value="splatana">ワイパー</option>
         <option value="stringer">弓</option>
     </select>
-    <select name="weapon" id="weapon">
-        <option disabled selected>武器を選んでください</option>
+    <select name="weapon" id="weapon" value="{{weapon}}">
+        <option disabled selected value="all">武器を選んでください</option>
+        <option value="all">ALL</option>
     </select>
         <input type="submit" value="戦績表示">
 </form>
@@ -116,7 +117,7 @@
         //menuList.disabled=false;//選択可能にする
         weapon_list[selectedgenre].forEach((menu,index)=>{
             const option=document.createElement('option');
-            option.value=index;
+            option.value=menu;
             option.innerHTML=menu;
             selectWeaponName.appendChild(option);
         });
@@ -212,141 +213,274 @@
             elm.innerHTML=("<p>勝率:"+Math.round(winrate*1000)/10+"% 勝利数:"+win_count[mode][rule]+" 敗北数: "+lose_count[mode][rule]+"</p>");  
         }
 
+        //絞り込みweapon,stage
+
     </script>
 
     {% for result in df %}
         {% for i in result['data']['vsHistoryDetail']['myTeam']['players'] %}
             {% if i['isMyself']==true %}
-                {% if 'REGULAR'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
-                    {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                        <script>count_win('regular',0)</script>
+                {% if weapon=='all' %}
+                    {% if 'REGULAR'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
+                        {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                            <script>count_win('regular',0)</script>
+                        {% endif %}
+                        {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                            <script>count_lose('regular',0)</script>
+                        {% endif %}
                     {% endif %}
-                    {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                        <script>count_lose('regular',0)</script>
+                    {% if 'BANKARA'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
+                        {% if "ガチエリア"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('bankara',0)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('bankara',0)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチヤグラ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('bankara',1)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('bankara',1)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチホコバトル"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('bankara',2)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('bankara',2)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチアサリ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('bankara',3)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('bankara',3)</script>
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                    {% if 'PRIVATE'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
+                        {% if "ナワバリバトル"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('private',0)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('private',0)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチエリア"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('private',1)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('private',1)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチヤグラ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('private',2)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('private',2)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチホコバトル"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('private',3)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('private',3)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチアサリ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('private',4)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('private',4)</script>
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                    {% if 'X-MATCH'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
+                        {% if "ガチエリア"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('x-match',0)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('x-match',0)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチヤグラ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('x-match',1)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('x-match',1)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチホコバトル"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('x-match',2)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('x-match',2)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチアサリ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('x-match',3)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('x-match',3)</script>
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                    {% if 'FEST'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
+                        {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                        <script>count_win('fest',0)</script>
+                        {% endif %}
+                        {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                            <script>count_lose('fest',0)</script>
+                        {% endif %}
                     {% endif %}
                 {% endif %}
-                {% if 'BANKARA'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
-                    {% if "ガチエリア"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                {% if i['weapon']['name']==weapon %}
+                    {% if 'REGULAR'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
                         {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_win('bankara',0)</script>
+                            <script>count_win('regular',0)</script>
                         {% endif %}
                         {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_lose('bankara',0)</script>
+                            <script>count_lose('regular',0)</script>
                         {% endif %}
                     {% endif %}
-                    {% if "ガチヤグラ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                    {% if 'BANKARA'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
+                        {% if "ガチエリア"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('bankara',0)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('bankara',0)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチヤグラ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('bankara',1)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('bankara',1)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチホコバトル"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('bankara',2)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('bankara',2)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチアサリ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('bankara',3)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('bankara',3)</script>
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                    {% if 'PRIVATE'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
+                        {% if "ナワバリバトル"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('private',0)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('private',0)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチエリア"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('private',1)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('private',1)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチヤグラ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('private',2)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('private',2)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチホコバトル"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('private',3)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('private',3)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチアサリ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('private',4)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('private',4)</script>
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                    {% if 'X-MATCH'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
+                        {% if "ガチエリア"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('x-match',0)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('x-match',0)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチヤグラ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('x-match',1)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('x-match',1)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチホコバトル"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('x-match',2)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('x-match',2)</script>
+                            {% endif %}
+                        {% endif %}
+                        {% if "ガチアサリ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
+                            {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_win('x-match',3)</script>
+                            {% endif %}
+                            {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
+                                <script>count_lose('x-match',3)</script>
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                    {% if 'FEST'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
                         {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_win('bankara',1)</script>
+                        <script>count_win('fest',0)</script>
                         {% endif %}
                         {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_lose('bankara',1)</script>
+                            <script>count_lose('fest',0)</script>
                         {% endif %}
-                    {% endif %}
-                    {% if "ガチホコバトル"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
-                        {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_win('bankara',2)</script>
-                        {% endif %}
-                        {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_lose('bankara',2)</script>
-                        {% endif %}
-                    {% endif %}
-                    {% if "ガチアサリ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
-                        {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_win('bankara',3)</script>
-                        {% endif %}
-                        {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_lose('bankara',3)</script>
-                        {% endif %}
-                    {% endif %}
-                {% endif %}
-                {% if 'PRIVATE'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
-                    {% if "ナワバリバトル"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
-                        {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_win('private',0)</script>
-                        {% endif %}
-                        {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_lose('private',0)</script>
-                        {% endif %}
-                    {% endif %}
-                    {% if "ガチエリア"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
-                        {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_win('private',1)</script>
-                        {% endif %}
-                        {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_lose('private',1)</script>
-                        {% endif %}
-                    {% endif %}
-                    {% if "ガチヤグラ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
-                        {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_win('private',2)</script>
-                        {% endif %}
-                        {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_lose('private',2)</script>
-                        {% endif %}
-                    {% endif %}
-                    {% if "ガチホコバトル"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
-                        {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_win('private',3)</script>
-                        {% endif %}
-                        {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_lose('private',3)</script>
-                        {% endif %}
-                    {% endif %}
-                    {% if "ガチアサリ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
-                        {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_win('private',4)</script>
-                        {% endif %}
-                        {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_lose('private',4)</script>
-                        {% endif %}
-                    {% endif %}
-                {% endif %}
-                {% if 'X-MATCH'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
-                    {% if "ガチエリア"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
-                        {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_win('x-match',0)</script>
-                        {% endif %}
-                        {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_lose('x-match',0)</script>
-                        {% endif %}
-                    {% endif %}
-                    {% if "ガチヤグラ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
-                        {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_win('x-match',1)</script>
-                        {% endif %}
-                        {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_lose('x-match',1)</script>
-                        {% endif %}
-                    {% endif %}
-                    {% if "ガチホコバトル"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
-                        {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_win('x-match',2)</script>
-                        {% endif %}
-                        {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_lose('x-match',2)</script>
-                        {% endif %}
-                    {% endif %}
-                    {% if "ガチアサリ"==result['data']['vsHistoryDetail']['vsRule']['name'] %}
-                        {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_win('x-match',3)</script>
-                        {% endif %}
-                        {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                            <script>count_lose('x-match',3)</script>
-                        {% endif %}
-                    {% endif %}
-                {% endif %}
-                {% if 'FEST'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
-                    {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                    <script>count_win('fest',0)</script>
-                    {% endif %}
-                    {% if "LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
-                        <script>count_lose('fest',0)</script>
                     {% endif %}
                 {% endif %}
             {% endif %}
         {% endfor %}
     {% endfor %}
     <div id="winrate">
+    <h2>使用ブキ:{{weapon}}</h2>
     <h3>レギュラーマッチ</h3>
         <h4>ナワバリバトル</h4>
         <p id="winrate_regular">a</p>
