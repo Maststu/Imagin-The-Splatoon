@@ -2,7 +2,7 @@ import json
 from pprint import pprint
 
 from flask import (Flask, current_app, g, redirect, render_template, request,
-                   url_for) 
+                    url_for) 
 
 app = Flask(__name__)
 
@@ -14,12 +14,18 @@ def Home():
 def login():
     return render_template("login.html")
 
-@app.route("/show_winrate")
+@app.route("/show_winrate",methods=["GET","POST"])
 def show_winrate():
     with open('./templates/results.json') as f:
         df = json.load(f)
     
-    return render_template("show_winrate.html",df=df)
+    if request.method == 'POST':
+        weapon=request.form['weapon']
+    else:
+        weapon =request.args.get('weapon','all')
+        
+        
+    return render_template("show_winrate.html",df=df,weapon=weapon)
 
 @app.route('/name_search',methods=["GET","POST"])
 def name_search():
