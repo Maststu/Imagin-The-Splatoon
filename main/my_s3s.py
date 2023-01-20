@@ -141,6 +141,7 @@ def prefetch_checks(printout=False):
 
 	if SESSION_TOKEN == "" or GTOKEN == "" or BULLETTOKEN == "":
 		gen_new_tokens("blank")
+	
 
 	sha = utils.translate_rid["HomeQuery"]
 	test = requests.post(utils.GRAPHQL_URL, data=utils.gen_graphql_body(sha), headers=headbutt(), cookies=dict(_gtoken=GTOKEN))
@@ -153,9 +154,10 @@ def prefetch_checks(printout=False):
 			print("Validating your tokens... done.\n")
 
 
-def gen_new_tokens(reason, force=False):
-	'''Attempts to generate new tokens when the saved ones have expired.'''
 
+def gen_new_tokens(reason, force=False, user_url=""):
+	'''Attempts to generate new tokens when the saved ones have expired.'''
+	
 	manual_entry = False
 	if force != True: # unless we force our way through
 		if reason == "blank":
@@ -168,7 +170,7 @@ def gen_new_tokens(reason, force=False):
 
 	if SESSION_TOKEN == "":
 		print("Please log in to your Nintendo Account to obtain your session_token.")
-		new_token = iksm.log_in(A_VERSION, APP_USER_AGENT)
+		new_token = iksm.log_in(A_VERSION, APP_USER_AGENT,user_url)
 		if new_token is None:
 			print("There was a problem logging you in. Please try again later.")
 		elif new_token == "skip":
@@ -187,7 +189,7 @@ def gen_new_tokens(reason, force=False):
 		acc_country = "US"
 		print("Using `US` for country by default. This can be changed in config.txt.")
 	else:
-		print("Attempting to generate new gtoken and bulletToken...")
+	
 		new_gtoken, acc_name, acc_lang, acc_country = iksm.get_gtoken(F_GEN_URL, SESSION_TOKEN, A_VERSION)
 		new_bullettoken = iksm.get_bullet(new_gtoken, APP_USER_AGENT, acc_lang, acc_country)
 	CONFIG_DATA["gtoken"] = new_gtoken # valid for 6 hours
@@ -387,7 +389,7 @@ def set_language():
 		language_code = ""
 
 		if language_code == "":
-			CONFIG_DATA["acc_loc"] = "en-US|US" # default
+			CONFIG_DATA["acc_loc"] = "JP|JP|JP" # default
 			write_config(CONFIG_DATA)
 			return
 		else:

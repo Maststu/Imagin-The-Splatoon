@@ -16,10 +16,23 @@ def Home():
     return render_template("home.html")
 
 
-@app.route("/login")
+@app.route("/login",methods=["GET","POST"])
 def login():
-    return render_template("login.html")
+    
+    if my_s3s.SESSION_TOKEN =="" or my_s3s.GTOKEN == "" or my_s3s.BULLETTOKEN == "":
+        if request.method == 'POST':
+            my_s3s.iksm.get_web_view_ver()
+            
+            my_s3s.gen_new_tokens("blank",user_url=request.form['password'])
+            #my_s3s.prefetch_checks(False)
+            return render_template("home.html")
+        else:
+            my_s3s.set_language()
 
+            return render_template("login.html",url=my_s3s.iksm.get_nintendo_url(my_s3s.A_VERSION,my_s3s.APP_USER_AGENT))
+
+    return "Hello"
+    
 @app.route("/show_winrate",methods=["GET","POST"])
 def show_winrate():
     with open('./templates/results.json') as f:
@@ -42,6 +55,9 @@ def name_search():
         username = request.form['username']
     else:
         username = request.args.get('username', 'noname')
+    
+    df = game_col.find().sort("playedTime",-1)
+
     return render_template("name_search.html", df=df, username=username)
 
 
@@ -69,8 +85,9 @@ def show_json():
     # file.close()
 
     if request.method == 'POST':
+        if my_s3s.SESSION_TOKEN == "":
 
-        redirect('login')
+            return redirect('login')
         my_s3s.set_language()
 
         my_s3s.fetch_json("ink",separate=True, exportall=True, specific=True, skipprefetch=True)
