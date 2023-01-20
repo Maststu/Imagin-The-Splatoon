@@ -53,8 +53,8 @@
         <option value="stringer">弓</option>
     </select>
     <select name="weapon" id="weapon" value="{{weapon}}">
-        <option disabled selected value="all">武器を選んでください</option>
-        <option value="all">ALL</option>
+        <option disabled selected value="ALL">武器を選んでください</option>
+        <option value="ALL">ALL</option>
     </select>
         <input type="submit" value="戦績表示">
 </form>
@@ -86,7 +86,7 @@
     const stringer_list=['トライストリンガー','LACT450'];
 
     const weapon_list={
-        "All":["ALL"],
+        "all":["ALL"],
         "shot":shot_list,
         "dualies":dualies_list,
         "charger":charger_list,
@@ -115,7 +115,12 @@
     function setMenuOptions(selectedgenre){
         const selectWeaponName=document.getElementById('weapon');
         //menuList.disabled=false;//選択可能にする
+        //要素を削除
+        while(selectWeaponName.firstChild){
+                selectWeaponName.removeChild(selectWeaponName.firstChild);
+            }
         weapon_list[selectedgenre].forEach((menu,index)=>{
+            //要素を追加
             const option=document.createElement('option');
             option.value=menu;
             option.innerHTML=menu;
@@ -220,7 +225,7 @@
     {% for result in df %}
         {% for i in result['data']['vsHistoryDetail']['myTeam']['players'] %}
             {% if i['isMyself']==true %}
-                {% if weapon=='all' %}
+                {% if weapon=='ALL' %}
                     {% if 'REGULAR'==result['data']['vsHistoryDetail']['vsMode']['mode'] %}
                         {% if "WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement'] %}
                             <script>count_win('regular',0)</script>
