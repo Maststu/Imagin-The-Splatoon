@@ -37,8 +37,9 @@
 <!-- /sidebar section -->
 <!--モード入力-->
 <form action="{{url_for('show_winrate')}}" method="POST">
+    <div class="select">
     <select name="weapon-genre" id="weapon-genre">
-        <option disabled selected>武器種を選んでください</option>
+        <option hidden>武器種を選んでください</option>
         <option value="all">ALL</option>
         <option value="shot">シューター</option>
         <option value="dualies">マニューバー</option>
@@ -53,10 +54,11 @@
         <option value="stringer">弓</option>
     </select>
     <select name="weapon" id="weapon" value="{{weapon}}">
-        <option disabled selected value="ALL">武器を選んでください</option>
+        <option hidden value="ALL">武器を選んでください</option>
         <option value="ALL">ALL</option>
     </select>
         <input type="submit" value="戦績表示">
+    </div>
 </form>
 
 <script>
@@ -486,62 +488,62 @@
     {% endfor %}
     <div id="winrate">
     <h2>使用ブキ:{{weapon}}</h2>
-    <h3>レギュラーマッチ</h3>
-        <h4>ナワバリバトル</h4>
+    <h3><img src="{{url_for('static',filename='regular.jpg')}}" width="28" height="28"> レギュラーマッチ</h3>
+        <h4><img src="{{url_for('static',filename='regular.jpg')}}" width="24" height="24"> ナワバリバトル</h4>
         <p id="winrate_regular">a</p>
         <script>print_result("winrate_regular",'regular',0)</script>
-    <h3>バンカラマッチ</h3>
-        <h4>ガチエリア</h4>
+    <h3><img src="{{url_for('static',filename='bankara.jpg')}}" width="28" height="28"> バンカラマッチ</h3>
+        <h4><img src="{{url_for('static',filename='area.jpg')}}" width="24" height="24"> ガチエリア</h4>
         <p id="winrate_bankara0">a</p>
         <script>print_result("winrate_bankara0",'bankara',0)</script>
-        <h4>ガチヤグラ</h4>
+        <h4><img src="{{url_for('static',filename='yagura.jpg')}}" width="24" height="24"> ガチヤグラ</h4>
         <p id="winrate_bankara1">a</p>
         <script>print_result("winrate_bankara1",'bankara',1)</script>
-        <h4>ガチホコバトル</h4>
+        <h4><img src="{{url_for('static',filename='hoko.jpg')}}" width="24" height="24"> ガチホコバトル</h4>
         <p id="winrate_bankara2">a</p>
         <script>print_result("winrate_bankara2",'bankara',2)</script>
-        <h4>ガチアサリ</h4>
+        <h4><img src="{{url_for('static',filename='asari.jpg')}}" width="24" height="24"> ガチアサリ</h4>
         <p id="winrate_bankara3">a</p>
         <script>print_result("winrate_bankara3",'bankara',3)</script>
-    <h3>プライベートマッチ</h3>
-        <h4>ナワバリバトル</h4>
+    <h3><img src="{{url_for('static',filename='private.jpg')}}" width="28" height="28"> プライベートマッチ</h3>
+        <h4><img src="{{url_for('static',filename='regular.jpg')}}" width="24" height="24"> ナワバリバトル</h4>
         <p id="winrate_private0">a</p>
         <script>print_result("winrate_private0",'private',0)</script>
-        <h4>ガチエリア</h4>
+        <h4><img src="{{url_for('static',filename='area.jpg')}}" width="24" height="24"> ガチエリア</h4>
         <p id="winrate_private1">a</p>
         <script>print_result("winrate_private1",'private',1)</script>
         
-        <h4>ガチヤグラ</h4>
+        <h4><img src="{{url_for('static',filename='yagura.jpg')}}" width="24" height="24"> ガチヤグラ</h4>
         <p id="winrate_private2">a</p>
         <script>print_result("winrate_private2",'private',2)</script>
         
-        <h4>ガチホコバトル</h4>
+        <h4><img src="{{url_for('static',filename='hoko.jpg')}}" width="24" height="24"> ガチホコバトル</h4>
         <p id="winrate_private3">a</p>
         <script>print_result("winrate_private3",'private',3)</script>
         
-        <h4>ガチアサリ</h4>
+        <h4><img src="{{url_for('static',filename='asari.jpg')}}" width="24" height="24"> ガチアサリ</h4>
         <p id="winrate_private4">a</p>
         <script>print_result("winrate_private4",'private',4)</script>
         
-    <h3>Xマッチ</h3>
-        <h4>ガチエリア</h4>
+    <h3><img src="{{url_for('static',filename='xmatch.jpg')}}" width="28" height="28"> Xマッチ</h3>
+        <h4><img src="{{url_for('static',filename='area.jpg')}}" width="24" height="24"> ガチエリア</h4>
         <p id="winrate_x-match0">a</p>
         <script>print_result("winrate_x-match0",'x-match',0)</script>
         
-        <h4>ガチヤグラ</h4>
+        <h4><img src="{{url_for('static',filename='yagura.jpg')}}" width="24" height="24"> ガチヤグラ</h4>
         <p id="winrate_x-match1">a</p>
         <script>print_result("winrate_x-match1",'x-match',1)</script>
         
-        <h4>ガチホコバトル</h4>
+        <h4><img src="{{url_for('static',filename='hoko.jpg')}}" width="24" height="24"> ガチホコバトル</h4>
         <p id="winrate_x-match2">a</p>
         <script>print_result("winrate_x-match2",'x-match',2)</script>
         
-        <h4>ガチアサリ</h4>
+        <h4><img src="{{url_for('static',filename='asari.jpg')}}" width="24" height="24"> ガチアサリ</h4>
         <p id="winrate_x-match3">a</p>
         <script>print_result("winrate_x-match3",'x-match',3)</script>
         
-    <h3>フェスマッチ</h3>
-        <h4>ナワバリバトル</h4>
+    <h3><img src="{{url_for('static',filename='festmatch.jpg')}}" width="28" height="28"> フェスマッチ</h3>
+        <h4><img src="{{url_for('static',filename='regular.jpg')}}" width="24" height="24"> ナワバリバトル</h4>
         <p id="winrate_fest">a</p>
         <script>print_result("winrate_fest",'fest',0)</script>
         
