@@ -1,0 +1,27 @@
+.box{
+    display: inline-block;
+    position: relative;
+}
+
+
+#win{
+	color: white;
+	background-color: red;
+	font-size: 20px;
+}
+
+#lose{
+	color: white;
+	background-color: blue;
+	font-size: 20px;
+}
+
+#draw{
+	color: white;
+	background-color: orange;
+	font-size: 20px;
+}
+
+details > summary{
+    box-shadow: 3px 3px 4px gray;
+}
