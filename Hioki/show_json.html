@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>ITS_Json_Information</title>
         <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='show_json.css')}}">
         <script src="https://kit.fontawesome.com/a69c380e0a.js" crossorigin="anonymous"></script>
     </head>
 <body>
@@ -15,7 +16,7 @@
 </label>
 
 <!-- sidebar section -->
-<div class="sidebar">
+<div class="sidebar" style="z-index: 1000">
     <header><a href="{{url_for('Home')}}">Home</a></header>
     <dl><dt>Schedule</dt>
         <ul>
@@ -60,21 +61,53 @@
                 elm.innerHTML+="<p>キルレート:"+krate.toFixed(1)+"% デスレート:"+drate.toFixed(1)+"% アシストレート:"+arate.toFixed(1)+"%</p>";
                 
             }
+
+
+
         </script>
         <h1>{{df[124]['data']['vsHistoryDetail']['myTeam']['players'][2]['name']}}'s Buttle Result</h1>
         <p id="result_sum">Hello</p>
+
+        
         
         {% for result in df %}
+            <div class="box">
+            <details>
 
+            <summary>
             {% if ("WIN"==result['data']['vsHistoryDetail']['myTeam']['judgement']) %}
-                <p id="win">Judgement:{{result['data']['vsHistoryDetail']['myTeam']['judgement']}}</p>
-            {% endif %}
-            {% if ("LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement']) %}
+                <p id="win">{{result['data']['vsHistoryDetail']['myTeam']['judgement']}}{{}}</p>
+            {% elif ("LOSE"==result['data']['vsHistoryDetail']['myTeam']['judgement']) %}
                 <p id="lose">Judgement:{{result['data']['vsHistoryDetail']['myTeam']['judgement']}}</p>
+            {% else %}
+                <p id="draw">Judgement:{{result['data']['vsHistoryDetail']['myTeam']['judgement']}}</p>
             {% endif %}
+            </summary>
+
+            <script>
+                function game_count(){
+                    game_sum+=1;
+                    mode = {{ result['data']['vsHistoryDetail']["vsMode"]["mode"]|tojson}}
+
+                    if(mode == "REGULAR")
+                        regulargame_sum+=1;
+                    else if(mode == "BANKARA")
+                        bankaragame_sum+=1;
+                    else if(mode == "X_MATCH")
+                        xmatchgame_sum+=1;
+                    else if(mode == "PRIVATE")
+                        privategame_sum+=1;
+                    else
+                        fes_sum+=1;
+                }
+
+                game_count();
+            </script>
 
             <div class="myteam">
-            <h3>Team Member</h3>
+            
+           
+            <h3>My Team</h3>
             {% for i in result['data']['vsHistoryDetail']['myTeam']['players'] %}
                 <h4>{{i['byname']}}</h4> 
                 <p><span>{{i['name']}} <img src="{{i['weapon']['image']['url']}}" class="weapon"></span>
@@ -95,6 +128,37 @@
                 </script>
             
             {% endfor %}
+           
+                <h3>Opponent Team</h3>
+            {% for i in result['data']['vsHistoryDetail']['otherTeams'][0]['players'] %}
+                <h4>{{i['byname']}}</h4> 
+                <p><span>{{i['name']}} <img src="{{i['weapon']['image']['url']}}" class="weapon"></span>
+                   {{i['result']['kill']}}キル {{i['result']['death']}}デス {{i['result']['assist']}}アシスト</p>
+                
+                
+
+                   
+
+                <script>
+                    
+                    // function sum_result(){
+                        
+                    //     var name = {{i['name']|tojson}};
+                    //     if(name == "kaososo"){
+                    //         ksum += {{i['result']['kill']}};
+                    //         dsum += {{i['result']['death']}};
+                    //         asum += {{i['result']['assist']}};
+                    //     }
+                    //     game_count+=1;
+                        
+                    // }
+
+                    //sum_result();
+                </script>
+            
+            {% endfor %}
+
+            
             </div>
             <div id="rule">
             <h3>Mode:{{result['data']['vsHistoryDetail']['vsMode']['mode']}} Rule:{{result['data']['vsHistoryDetail']['vsRule']['name']}} Stage:{{result['data']['vsHistoryDetail']['vsStage']['name']}}</h3>
@@ -103,8 +167,11 @@
             </div>
             
             <hr size="3">
-        
+        </details>
+        <br>
+        </div>
         {% endfor %}
+        
 
         <script>
             
